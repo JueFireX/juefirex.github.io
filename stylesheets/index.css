@@ -134,7 +134,7 @@
 	height: 34px; 
 	border: none; 
 	border-radius: 8px; 
-	background: #003AFF; 
+	background: #003AFFAA; 
 	vertical-align: middle; 
 	outline: none; 
 	color: #DDDDDD; 
@@ -142,7 +142,7 @@
 	transition: all 0.3s;
 }
 .search-button:hover {
-	background-color: #004AFF;
+	background-color: #004AFFAA;
 }
 
 
