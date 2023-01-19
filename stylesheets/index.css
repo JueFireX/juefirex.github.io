@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main {
+    width: 100%;
+    margin: auto;
+}
+.main h1 {
+	margin: 30px 0px;
+    font-size: 60px;
+}
+
+
+.cover {
+	padding: 30px;
+	margin: 300px 0;
+	text-align: center;
+}
+
+.column {
+  	float: left;
+	padding: 40px 0;
+  	height: auto; 
+}
+.column.side {
+  	width: 10%;
+ 	background-color: #FFFFFF00;
+}
+.column.middle {
+  	width: 70%;
+	padding-left: 5%;
+	padding-right: 5%;
+  	background-color: #FFFFFF33;
+	text-align: center;
+}
+.column P {
+	color: #F5F5F5;
+	text-align: center;
+	text-indent: 10px;
+	line-height: 40px;
+	
+}
+.column h2 {
+	margin: 15px 3px;
+}
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.end {
+  	background-color: #FFFFFF00;
+  	height: 100px;
+  	text-align: center;
+}
+
+.footer {
+  background-color: #FFFFFF00;
+  padding: 30px;
+  height: auto;
+  text-align: left;
+  line-height: 30px;
+}
+.footer P{
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+.home { 
+    float: left;
+    width: 140px;
+    height: 29px;
+    font-weight: bold;
+}
+.home a {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+.nav {
+    float: left;
+    font-weight: normal;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+.nav ul li {
+    float: left;
+    margin-left:20px;
+    margin-top: 5px;
+}
+.nav ul li a {
+    display: block;
+    height: 24px;
+    padding: 0 3px;
+}
+
+
+.search{
+    float: right;
+    margin-bottom: 5px;
+	margin-right: 20px;
+    width: 250px;
+    height: 29px;
+}
+.search-input {
+	width: 180px; 
+	height: 32px; 
+	border: 2px solid #AAAAAA; 
+	border-radius: 8px; 
+	background-color: #1E1E1ECC;
+	box-sizing: border-box; 
+	outline: none; 
+	text-indent: 10px; 
+	transition: all 0.3s;
+} 
+.search-input:focus {
+	background-color: #DDDDDD;
+	border: 2px solid #003AFF; 
+}
+.search-button { 
+	width: 50px; 
+	height: 34px; 
+	border: none; 
+	border-radius: 8px; 
+	background: #003AFF; 
+	vertical-align: middle; 
+	outline: none; 
+	color: #DDDDDD; 
+	font-size: 14px; 
+	transition: all 0.3s;
+}
+.search-button:hover {
+	background-color: #004AFF;
+}
+
+
+/* body {
+	background-image: url("https://cn.bing.com/th?id=OHR.InukshukLights_ZH-CN0756858983_1920x1080.jpg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+    background-color:#1e1e1e;
+	color: #fff;			
+    cursor:default;
+    font-family:Helvetica,sans-serif;
+    font-size:16px;  
+} */
+
+.bg-img {
+	background-attachment:fixed;
+	background-image:url(http://bing.taller.fun);
+	/* background-image:url(https://cn.bing.com/th?id=OHR.InukshukLights_ZH-CN0756858983_1920x1080.jpg); */
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
+	height:100%;
+	left:0;
+	opacity:.5;
+	position:fixed;
+	top:0;
+	transform:scale(1.1);
+	width:100%;
+	z-index:-1;
+}
+
+
+
+
+body {
+    background-color: #1E1E1E;
+    color: #F5F5F5;
+    cursor: default;
+    font-family: Helvetica,sans-serif;
+    font-size: 16px;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+header {
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    background-color:rgba(255,255,255,.1);
+    box-shadow:0 2px 2px rgba(0,0,0,.2);
+    padding:10px 15px;
+    position:fixed;
+    top:0;
+    -webkit-user-select:none;
+    user-select:none;
+    width:100%
+}
+
+
+a {
+	color: #DDDDDD;
+    text-decoration: none;
+	transition: color 0.3s;
+}
+a:hover {
+	color: #AAAAAA;
+}
+
+
+li {
+    list-style: none;
+
+}
+
+
+/* 抄来的 */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+  
+	width: 100px;
+	background-color: #3A3A3A;
+	color: #DDDDDD;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 8px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+
+	left: 50%;
+	margin-left: -50px;
+	top: 100%;
+
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 0.8;
+}
